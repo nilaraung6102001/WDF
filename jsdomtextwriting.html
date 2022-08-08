@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>auto text writing</title>
+	</head>
+
+	<body>
+
+		<div>
+			<p id="display"></p>
+		</div>
+		
+
+		<script type="text/javascript">
+			
+		let getdisplay = document.getElementById('display');
+
+		const paragraph = "Simply put, a paragraph is a collection of sentences all related to a central topic, idea, or theme. Paragraphs act as structural tools for writers to organize their thoughts into an ideal progression, and they also help readers process those thoughts effortlessly. Imagine how much harder reading and writing would be if everything was just one long block of text. ";
+
+
+		let i = 0;
+		let j = paragraph.length;
+
+		// console.log(i,j);
+
+
+
+		// function startwriting(){
+		// 	// console.log('hay');
+
+		// 	getdisplay.textContent += paragraph[i];
+		// 	i++;
+
+		// 	if (i === j){
+		// 		clearInterval(stopwriting);
+		// 	}
+		// }
+
+		
+		// let stopwriting = setInterval(startwriting,30);
+
+
+		function startwriting(){
+			getdisplay.innerHTML += paragraph[i];
+			i++
+
+			stopwriting(i,j);
+		}
+
+		function stopwriting(start,end){
+			if(start === end){
+				clearInterval(stoptext)
+			}
+		}
+
+		
+
+		let stoptext = setInterval(startwriting,5);
+
+
+
+		</script>
+	</body>
+</html>

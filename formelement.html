@@ -1,0 +1,128 @@
+<html>
+
+<head>
+	
+	<title>Form element</title>
+</head>
+<body>
+<h1>Form Tag</h1>
+<fieldset>
+	 <legend>This is simple form &#169;&#8940;</legend> 
+<!-- 	 <legend align="right">This is simple form</legend> -->
+
+<form action="" method="" enctype="multipart/form-data">
+	<label for="firstname">first name</label>
+	<input type="text" name="firstname" id="firstname" class="" placeholder="enter first name" minlength="4" maxlength="10" />
+	<br/>
+	<label>last name</label>
+	<input type="text" name="lastname" id="lastname" class="" placeholder="enter last name" required/>
+	<br/><br/>
+
+
+	<label for="email">Email</label>
+	<input type="email" name="email" id="email" class="" placeholder="enter email" />
+	<br/><br/>
+
+
+	<label for="password">password</label>
+	<input type="password" name="password" id="password" class="" placeholder="enter password" minlength="4" maxlength="8" required/>
+	<br/>
+
+
+	<label for="age">Age</label>
+	<input type="number" name="age" id="age" class="" placeholder="enter age" min="18" max="25" />
+	<br/><br/>
+
+
+	<label>Gender</label>
+	<input type="radio" name="gender" id="genderm" class="" value="1" checked><label for="genderm">male</label>
+	<input type="radio" name="gender" id="genderf" class="" value="0"><label for="genderf">female</label>
+	<input type="radio" name="gender" id="gendero" class="" value="2"><label for="gendero">other</label>
+	<br/><br/>
+
+
+	<lable>Salary</lable>
+	<input type="radio" name="salary" id="salaryc" class=""/><label for="salaryc">Cash</label>
+	<input type="radio" name="salary" id="salarym" class="" checked/><label for="salarym">Mobile Banking</label>
+	<br/><br/>
+
+	<label>Choose your fav colour</label>
+	<input type="checkbox" name="colour" id="colourred" class="" value="re"><label for="colourred">Red</label>
+	<input type="checkbox" name="colour" id="colourblack" class="" value="bl" checked><label for="colourblack">Black</label>
+	<input type="checkbox" name="colour" id="colouryellow" class="" value="ye"><label for="colouryellow">Yellow</label>
+	<input type="checkbox" name="colour" id="colourwhite" class="" value="wi" checked><label for="colourwhite">White</label>
+	<br/><br/>
+
+	<label for="country">Citizen</label>
+	<select name="country" id="country" class="">
+		<option selected disabled>Choose your country</option>
+		<option value="mm">Myanmar</option>
+		<option value="kor" >Korea</option>
+		<option value="jp">Japan</option>
+		<option value="Thi">Thailand</option>
+		<option value="Us">Us</option>
+	</select>
+	<br/><br/>
+
+	<label for="role">Role</label>
+	<select name="role" id="role" class="" multiple >
+		<option vlue="1">Maneger</option>
+		<option value="2">Editor</option>
+		<option value="3">Sale</option>
+	</select>
+
+	<br/><br/>
+
+	<input type="hidden" name="test" id="test" class=""/>
+
+	<br/><br/>
+	<label for="dob">Date of birth</label>
+	<input type="date" name="dob" id="dob" class=""/>
+	<br/><br/>
+	<label for="bktime">Time</label>
+	<input type="time" name="bktime" id="bktime" class=""/>
+	<br/><br/>
+	<label for="dt">Date Time</label>
+	<input type="datetime-local" name="dt" id="dt" class=""/>
+	<br/><br/>
+	<label for="nrcf">NRC front</label>
+	<input type="file" name="nrcf" id="nrcf" class="" multiple />
+	<label for="nrcb">NRC back</label>
+	<input type="file" name="nrcb" id="nrcb" class=""/>
+	<br/><br/>
+	<label for="range">Range</label>
+	<input type="range" name="range" id="range" class="" min="0" max="100" step="20" value="1"/>
+	<br/>
+	<label for="bio">Bio</label>
+	<textarea  name="bio" rows="30" placeholder="enter bio"></textarea>
+	<br/><br/>
+	<input type="reset" name="reset" id="reset" class="" value="cancle">
+	<br/><br/>
+	<input type="submit" name="submit" id="submit" class="" value="register">
+	<br/><br/>
+	<button type="submit" name="reg" id="reg" class=""> submit</button>
+
+
+	
+
+
+</form>
+
+</fieldset>
+<hr/>
+<iframe src="tabletag.html" width="50%" height="500px"></iframe>
+
+</body>
+
+</html>
+
+
+<!-- Stand alone attribute 
+checked
+selected
+multiple
+disabled
+required
+
+
+-->

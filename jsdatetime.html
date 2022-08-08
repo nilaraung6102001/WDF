@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date and Time</title>
+</head>
+<body>
+	<small>Copyright @ <span  id='autoyear'></span>Eleven Media Group co.lit</small>
+
+
+	<script type="text/javascript">
+		
+		//Date Time (class Method)
+
+		let date = new Date();
+		// console.log(date);
+		// console.log(typeof date);
+
+		let hours = new Date().getHours();
+		console.log(hours);
+
+		let minutes = new Date().getMinutes();
+		console.log(minutes);
+
+		let seconds = new Date().getSeconds();
+		console.log(seconds);
+
+		let gettime = new Date().getTime();
+		console.log(gettime);
+
+		let now = Date.now();
+		console.log("it is now result "+now);
+
+		let getdate = new Date().getDate();
+		console.log(getdate);
+
+		let getmonth = new Date().getMonth();
+		console.log(getmonth);
+
+		let year = new Date().getFullYear();
+		console.log(year);
+
+		let utcyear = new Date().getUTCFullYear();
+		console.log(utcyear);
+
+		document.getElementById('autoyear').textContent = utcyear;
+
+		let bd = new Date("10-6-2001"); // result Sat Oct 06 2001 00:00:00 GMT+0630 (Myanmar Time)
+		bd = new Date('8/11/2013'); //result  Sun Aug 11 2013 00:00:00 GMT+0630 (Myanmar Time)
+		bd = new Date('Aug 10 2013');//result Sat Aug 10 2013 00:00:00 GMT+0630 (Myanmar Time)
+		bd = new Date('8/10/2013 11:11:11'); //result Sat Aug 10 2013 11:11:11 GMT+0630 (Myanmar Time)
+
+		bd.setMonth(9);
+		bd.setDate(6);
+		bd.setFullYear(2001);
+		bd.setHours(12);
+		bd.setMinutes(12);
+		bd.setSeconds(12);
+		console.log(bd);
+
+	</script>
+</body>
+
+</html>

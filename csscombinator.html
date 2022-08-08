@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Combinator</title>
+		<link href="css/combinator.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		
+		<h4>Tag To Tag</h4>
+		<div><span>I am span tag inside of div</span></div>
+
+		<div>I am div tag  of outside of div</div>
+
+		<span>I am span tag of outside of div</span>
+		<hr/>
+
+		<h4>Tag To multi tags</h4>
+		<div><span><p>I am p tag inside of div>span>p</p></span></div>
+
+		<div><p>I am p tag inside of div>p</p></div>
+
+		<span><p>I am p tag inside of span>p</p></span>
+		<hr/>
+
+		<h4>Multi tag to class</h4>
+		<div>
+			<span><small class="name">I am small tag inside of div>span>small(name)</small></span>
+			<p class="name">I am p tag inside of div>p(name)</p>
+			<p>I am p tag inside of div>p</p>
+		</div>
+
+		<hr/>
+
+		<h4>Tag to class</h4>
+		<div>
+			<p class="address"> I ma p tag inside of div>p(address)</p>
+			<span><b class="address">I am span tag inside of div>p>b(address)</b></span>
+		</div>
+
+		<hr/>
+
+		<h4>tag to multi class</h4>
+		<div>
+			<p class="name"> i am p tag inside of div>p</p>
+			<span class="name"><b class="age">i am span tag inside of div>span(name)>b(age)</b></span>
+		</div>
+		<hr/>
+
+		<h4>class to class</h4>
+		<div class="bank">
+			<b>I am b tag inside of div(bank)>b</b>
+			<br/>
+			<span class="money">
+				<b class="currency">I am b tag inside of div(bank)>span(money)>b(currency)</b>
+			<br/>
+			<b>hello</b>
+			</span>
+		</div>
+		<hr/>
+		<div class="container">
+			<h4>class to tag</h4>
+			<p>I am p tag inside of div(container)</p>
+			<b>I am b tag inside of div(container)</b>
+		</div>
+		<hr/>
+		<div class="container">
+			<h4>class to multi tags</h4>
+			<p>I am p tag inside of div(container)</p>
+			<b><span>I am span tag inside of div(container)>b>span</span></b>
+		</div>
+
+		<hr/>
+		<h4>same class</h4>
+		<div>
+			<ul>
+				<li class="mobile jpn">sony</li>
+				<li class="mobile cn">mi</li>
+				<li class="mobile us">iphone</li>
+			</ul>
+		</div>
+		<hr/>
+		<h4> Class to smae class</h4>
+		<div class="vehicle">
+			<ul>
+				<li class="car jpn">Toyota</li>
+				<li class="car cn">Suzuki</li>
+				<li class="car indo">Mazada</li>
+			</ul>
+			
+		</div>
+
+		<hr/>
+
+		<h4>Class to tag by group selector</h4>
+		<div class="div1">
+			<b>i am b tag inside of div(div1)</b>
+			<p>i am p tag inside of div(div1)</p>
+		</div>
+		<hr/>
+		<h4> Child Selector</h4>
+		<div class="div2">
+			<b>i am b tag inside of div(div2)>b1</b>
+			<p>i am p tag inside of div(div2)>p1</p>
+			<i>i am i tag inaide of div(div2)>i1</i>
+		
+
+		<div class="div3">
+			<b>i am b tag inside of div(div2)> (div3)> b2</b>
+			<p>i am p tag inside of div(div2)> (div3)> p2</p>
+			<i>i am i tag inaide of div(div2)> (div3)> i2</i>
+		</div>
+			<p>i am p tag inside of div(div2)>p4</p>
+
+	</div>
+
+			<b>i am b tag inside of div(div2)>b3</b>
+			<p>i am p tag inside of div(div2)>p4</p>
+			<i>i am i tag inaide of div(div2)>i3</i>
+
+			<hr/>
+
+			<h4>General sibling selector</h4>
+
+			<div class="div4">
+			<b>i am b tag inside of div(div4) > b1</b>
+			<p>i am p tag inside of div(div4) > p1</p>
+			<i>i am i tag inaide of div(div4) > i1</i>
+		
+
+		<div class="div5">
+			<b>i am b tag inside of div(div4) > (div5)> b2</b>
+			<p>i am p tag inside of div(div4) > (div5)> p2</p>
+			<i>i am i tag inaide of div(div4) > (div5)> i2</i>
+		</div>
+			<b>i am b tag inside of div(div4) > b3</b>
+			<p>i am p tag inside of div(div4) > p3</p>
+			<i>i am i tag inaide of div(div4) > i3</i>
+
+	</div>
+
+		<div class="div6">
+
+			<b>i am b tag inside of div(div6) > b3</b>
+			<p>i am p tag inside of div(div6) > p4</p>
+			<i>i am i tag inaide of div(div6) > i3</i>
+		</div>
+			<b>i am b tag inside of div(div4)> (div6)> b5</b>
+			<p>i am p tag inside of div(div4)> (div6)> p5</p>
+			<i>i am i tag inaide of div(div4)> (div6)> i5</i>
+			<p>i am p tag inside of div(div4)> (div6)> p6</p>
+			<b>i am b tag inside of div(div4)> (div6)> b6</b>
+			<p>i am p tag inside of div(div4)> (div6)> p7</p>
+			<i>i am i tag inaide of div(div4)> (div6)> i6</i>
+
+
+			<hr/>
+			<h4>Adjecent sibling selector</h4>
+			<div class="div7">
+
+			<b>i am b tag inside of div(div7) > b1</b>
+			<p>i am p tag inside of div(div7) > p1</p>
+			<i>i am i tag inaide of div(div7) > i1</i>
+		
+
+		<div class="div8">
+			<b>i am b tag inside of div(div7) > (div8)> b2</b>
+			<p>i am p tag inside of div(div7) > (div8)> p2</p>
+			<i>i am i tag inaide of div(div7) > (div8)> i2</i>
+		</div>
+			<b>i am b tag inside of div(div7) > b3</b>
+			<p>i am p tag inside of div(div7) > p3</p>
+			<i>i am i tag inaide of div(div7) > i3</i>
+
+	</div>
+	<p>i am p tag inside of div(div7)> (div9)> p7</p>
+
+		<div class="div9">
+
+			<b>i am b tag inside of div(div9) > b3</b>
+			<p>i am p tag inside of div(div9) > p4</p>
+			<i>i am i tag inaide of div(div9) > i3</i>
+		</div>
+			<b>i am b tag inside of div(div7)> div(8)> (div9)> b5</b>
+			<p>i am p tag inside of div(div7)> div(8)> div(8)> (div9)> p5</p>
+			<i>i am i tag inaide of div(div7)> div(8)> (div6)> i5</i>
+			<p>i am p tag inside of div(div7)> div(8)> (div9)> p6</p>
+			<b>i am b tag inside of div(div7)> div(8)> (div9)> b6</b>
+			<p>i am p tag inside of div(div7 > div(8)> (div9)> p7</p>
+			<i>i am i tag inaide of div(div7)> div(8)> (div9)> i6</i>
+	</body>
+</html>

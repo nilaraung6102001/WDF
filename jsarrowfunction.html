@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>arrow function</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		
+		//regular function (mananual function - without parameter)
+
+		let regfun = function(){
+			return "i love mandalay";
+		}
+
+		console.log("this is reg function without parameter = " + regfun());
+
+
+// _________________________________________________
+
+		//arrow function
+		//i without parameter
+		//method1
+
+		let arrfunone =() =>{
+			return "hello i am arrfunone";
+		}
+
+		console.log("this is arr function without parameter = "+ arrfunone());
+
+		//method2
+		let arrfuntwo = ()=>'hello i am arrowfuntwo';
+		console.log("this is arr function without parameter  = "+ arrfuntwo());
+
+
+		// ==>method3
+		let arrfunthree = ()=>(
+		{
+			name:"aung aung",
+			age:25
+		});
+
+		console.log(" this is arr function without parameter = "+ arrfunthree());
+
+		// result =>hello i am arrfunthree
+		// let arrfunthree = ()=>("hello i am arrfunthree" )
+		// console.log(arrfunthree());
+
+
+		// result =>100
+		// let arrfunthree = ()=>(10+90 )
+		// console.log(arrfunthree());
+
+		//result => 4
+		let arrfunfour = ()=> 1+3;
+		console.log("This is arr funfour" + arrfunfour()); 
+
+
+		//result => 1+3
+		// let arrfunfour = ()=>" 1+3";
+		// console.log("This is arr funfour" + arrfunfour()); 
+//______________________________________________________
+
+
+//30.21.2021
+
+		//ii parameter function
+			//reg function
+
+			let resignlefun = function(num1){
+				return num1+10;
+			}
+			console.log("this is reg function with multi parameter = "+ resignlefun(10));
+
+
+			let remultifun = function(num1,num2){
+				return num1+num2;
+			}
+			console.log("this is reg function with single parameter = "+ remultifun(10,50));
+
+
+
+			//arr function
+				//arr single parameter
+
+				let arrsinglefun1 = (num1)=>{
+					return num1+10;
+				}
+				console.log("this is an arrow function single parameter "+ arrsinglefun1(60));
+
+				let arrsinglefun2 = num1=>{
+					return num1+10;
+				}
+				console.log("this is an arrow function single parameter "+ arrsinglefun2(80));
+
+
+				let arrsinglefun3 = num1=>num1+20;
+				console.log("this is arr function with single parameter = " + arrsinglefun3(30));
+
+
+				// let arrsinglefun3 = num1=>return
+
+
+
+		//arr multi parameter
+
+		let arrmultifun1 = (num1,num2)=>{
+			return num1+num2;	
+		}
+		console.log("this is arr function with multi parameter ="+ arrmultifun1(30,70));
+
+		//ERROR
+		// let arrmultifun1 = num1,num2=>{
+		// 	return num1+num2;	
+		// }
+		// console.log("this is arr function with multi parameter ="+ arrmultifun1(30,70));
+		
+
+		//default parameter
+		let arrmultifun2 = (num1,num2=20)=>{
+			return num1+num2;	
+		}
+		console.log("this is arr function with multi parameter ="+ arrmultifun2(10));
+	</script>
+</body>
+</html>

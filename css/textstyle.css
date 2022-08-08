@@ -1,0 +1,23 @@
+.textalign{
+	/*text-align: right;*/
+	/*text-align:left;*/
+	text-align: center;
+	/*text-align: justify;*/
+
+}
+.textdecoration{
+	text-decoration: underline;
+	/*text-decoration: overline;*/
+	/*text-decoration: line-through;*/
+
+}
+.textline{
+	letter-spacing: 3px;
+	/*line-height: 50px;*/
+	/*line-height: 2;*/
+	line-height: 300%;
+}
+.textshadow{
+	/*text-shadow: 10px 0 0 orange;*/
+	text-shadow: 0 12px 5px yellow;
+}

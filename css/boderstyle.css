@@ -1,0 +1,111 @@
+.boderstyle1{
+	border-style:solid;
+}
+.boderstyle2{
+	border-style:dotted;
+}
+.boderstyle3{
+	border-style:double;
+}
+.boderstyle4{
+	border-style:dashed;
+}
+.boderstyle5{
+	border-style:inset;
+}
+.boderstyle6{
+	border-style:outset;
+}
+.bddesign{
+	width: 300px;
+	height: 300px;
+	background-color: hotpink;
+	color:skyblue;
+
+	
+	/*all angle*/
+	/*border-radius: 50%;*/
+	/*border-radius: 10px;*/
+
+
+	 /* if value is 2,clock wise direction*/
+	/*border-radius: 10px 50px;*/
+
+
+	/*top left top right buttom right buttom left(clock wise direction)*/
+	/*border-radius: 10px 50px 100px 300px;*/
+
+
+	border-top-left-radius: 10px;
+	border-top-right-radius: 70px;
+	border-bottom-right-radius: 100px;
+	border-bottom-left-radius: 50px;
+}
+
+
+/*ul{*/
+	/*list-style-type: square;*/
+	/*list-style-type:circle ;*/
+	/*list-style-type: none;*/
+	/*list-style: none;*/
+/*}*/
+
+li{
+/*list-style-type: square;*/
+/*list-style-type:circle;*/
+/*list-style-type: none;*/
+/*list-style: none;*/
+/*list-style-type: decimal;*/
+list-style-type: decimal-leading-zero;
+	/*short hand*/
+	/*     s    s      c */
+/*border: 2px dotted blue;*/
+
+border: 2px;
+border-style:solid ;
+border-color: orange;
+list-style-position: inside;
+/*list-style-position: outside;*/
+}
+
+/*Attribute selector*/
+input[type="email"]{
+	width: 100px;
+	color: white;
+	background-color: hotpink;
+	border-radius: 6px;
+
+}
+
+
+body{
+	background-image: url("../img/icon1.png");
+	/*background-color: navy;*/
+	background-repeat: no-repeat;
+
+
+	/*background-position:center;*/
+	/*background-position:right;*/
+	/*background-position:left;*/
+	/*background-position:top;*/
+	/*background-position:bottom;*/
+
+	/*background-attachment: fixed;*/
+	/*background-attachment: scroll;*/
+
+	/*background-position:right center ;*/
+	/*background-position:left center ;*/
+
+	/*background-position:right bottom ;*/
+	/*background-position:left bottom ;*/
+
+	/*background-position:right top ;*/
+	background-position:left top ;
+
+}
+
+
+
+/*() function
+{} object
+[] array*/

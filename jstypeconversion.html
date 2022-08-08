@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Type Conversion</title>
+</head>
+
+<body>
+
+
+
+
+    <script type="text/javascript">
+        let val;
+
+
+        //to string
+
+        val = "aung aung";
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+
+
+        //Number to String
+        //val = '20';
+        // val = "20";
+
+        // val = String(20);
+
+        val = "20 + 20"; //result 20+20
+        val = String(20 + 20); //result 40
+
+        // var a=20;
+        // var b=20;
+        // var result =20+20;
+        // console.log(typeof result) //result number
+        // console.log(String(result));// result string
+
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+
+        //bool to string
+        //val ="true"
+        val = true;
+        val = String(val);
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+
+        //Date to String
+        val = "new Date()"; //result = new Date() Length=10
+        val = String(new Date()); //result = Fri Dec 31 2021 17:05:34 GMT+0630 (Myanmar Time)  length = 48
+
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        //array to string
+        val = "[1,2,3,4,5]"; //result = [1,2,3,4,5]
+        val = String([1, 2, 3, 4, 5]); //result = 1,2,3,4,5
+
+
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+
+        //toString = ().toString();
+        val = (new Date()).toString();
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        //_______________________________________
+
+        //string to number
+
+
+        // val=prompt("enter number");
+        // console.log(typeof val);
+        // console.log(val.length);
+
+        val = Number('5');
+
+        // val = +'5'; //result 5 number undefined
+        // val = +val; //result 5 number undefined
+
+        //val = +"aung aung"; //NaN = Not A Number
+        //val = Number("aung aung"); //NaN = Not A Number
+
+
+        console.log("number 5 is ", val);
+        console.log(typeof val);
+        console.log(val.length);
+        console.log(val.toFixed(2)); //result 5.00
+
+
+        val = 230.3456789;
+        console.log(val);
+        console.log(val.toFixed(3)); //result 230.346 
+
+
+
+        val = "5.123";
+        val = parseInt(val); //resut = 5
+        console.warn(val);
+        console.log(typeof val); //result = number
+        console.log(val.length); // result = underfined
+        console.log(val.toFixed(2));
+
+        val = "5.123";
+        val = parseFloat(val); //resut = 5.123
+        console.error(val);
+        console.log(typeof val);
+        console.log(val.length);
+        console.log(val.toFixed(2));
+
+
+
+
+        //bool to number
+        val = true;
+        val = Number(true); //true is 1 false is 0
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+
+        //_______________________________________________________
+
+
+        //string ----- to array
+
+        val = "aung kyaw kyaw";
+        val = Array.from(val);
+        val = Array.isArray(val);
+        console.error(val);
+        console.log(typeof val);
+        console.log(val.length);
+        console.log(val[3]);
+
+
+
+        //CAN'T Convert To Array
+        val = Array.from(20);
+        val = Array.from(true);
+        val = {
+            music: "pop",
+            sport: "basketball"
+        };
+
+        val = Array.from(val);
+
+        console.log(val);
+        console.log(typeof val);
+        console.log(val.length);
+    </script>
+</body>
+
+</html>

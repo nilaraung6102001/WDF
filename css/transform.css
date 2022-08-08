@@ -1,0 +1,168 @@
+:root{
+	--oc: orange;
+	--gn: green;
+	--bl: blue;
+}
+.div1{
+	width: 100px;
+	height: 80px;
+	background-color: var(--gn);
+
+	transform: rotate(10deg);
+}
+.div2{
+	width: 200px;
+	height: 80px;
+	background-color: var(--oc);
+	transform: rotate(45deg);
+}
+
+.div3{
+	width: 200px;
+	height: 80px;
+	background-color: var(--bl);
+	color: white;
+	transform: rotateY(50deg);
+}
+.div4{
+	width: 200px;
+	height: 80px;
+	background-color: var(--gn);
+	color: white;
+	transform: rotatex(50deg);
+}
+.div5{
+	width: 200px;
+	height: 80px;
+	background-color: var(--bl);
+	color: white;
+	/*transform: scale(0);*/
+	transform: scale(0.8);
+}
+
+.country{
+	font-size: 16px;
+
+	/*vendors prfix properties*/
+	-webkit-apperance: none; /*chrome ssafri */
+	-moz-apperance: none; /*Mozila firefox*/
+	appearance: none;
+	padding: 10px 25px 10px 10px;
+	background-image: url("https://starpng.com/public/uploads/preview/red-arrows-png-hd-down-arrow-png-photos-101576826990c4eraseblb.png");
+	background-repeat: no-repeat;
+	background-size: 15px;
+	background-position: right;
+	background-position-x:90% ;
+}
+
+
+h1{
+	text-align: center;
+	color: blue;
+}
+p.text{
+	text-align: center;
+	color: red;
+}
+
+@media(max-width:600px){
+	h1{
+		font-size: 25px;
+		color: green;
+		
+	}
+
+	p.text{
+		color: orange;
+	}
+
+}
+
+
+.container{
+	width: 300px;
+	height: 300px;
+	/*background-color: green;*/
+
+	display: flex; /*(parent mar thar shi ya mal)*/
+	justify-content: center;  /* H center  (display ma shi yin no work)*/
+	align-items: center;  /* V centre (display ma shi yin no work) */
+	position: relative;
+	margin: auto; /*center*/
+
+}
+
+.c1{
+	width: 300px;
+	height: 300px;
+	background-color: black;
+	
+	border-radius: 50%;
+	z-index: 2;
+
+	
+}
+
+.c2{
+	width: 320px;
+	height: 320px;
+	background:conic-gradient(
+        red 40%,
+        yellow 0 70%,
+        blue 0
+
+
+
+		);
+
+		
+	border-radius: 50%;
+	position: absolute;
+
+	z-index: 1;/*defult=0*/
+	}
+
+
+.pointer-container{
+	width: 20px;
+	height: 200px;
+	position: absolute;
+	top: -50px;
+	
+	/*background-color: gray;*/
+
+
+	animation-name: myani;
+	animation-duration: 7.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear ;
+	transform-origin: bottom;
+
+
+
+	z-index: 4;
+
+}
+
+
+.pointer{
+	width: 20px;
+	height: 20px;
+	background-color: red;
+	display: block;
+	
+	border-radius: 50%;
+
+}
+
+@keyframes myani{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+
+/*-o- opera,-ms- Internet Explorer*/

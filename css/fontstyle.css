@@ -1,0 +1,132 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Stick&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');*/
+
+/*global fony intergrate by local folder(or)projet folder*/
+
+
+/*@font-face{*/
+	/*font-family: stick;*/
+	/*src: local('Stick-Regular'),url('../libs/fonts/stick/Stick-Regular.ttf') format('woff');*/
+/*}*/
+/*@font-face{
+	font-family: Akaya Telivigala;
+	src: local(AkayaTelivigala-Regular),url(../libs/fonts/akayatelivigala/AkayaTelivigala-Regular.ttf) format('woff');
+}
+*/
+
+/*golobal font integrate*/
+
+/*CDN(content deliver network)*/
+/*body{
+	font-family: 'Stick', sans-serif;
+}
+*/
+
+/*.p1{
+	font-family: 'Stick', sans-serif;
+}*/
+/*.p2{
+	font-family: 'Akaya Telivigala', sans-serif;
+}*/
+
+/*.p3{
+	font-family: 'Stick', sans-serif;
+}*/
+
+
+
+
+
+
+
+
+
+
+/*Local font intergate*/
+/*LM(local mechine)*/
+
+/*body{*/
+	/*font-family: Century;*/
+	/*font-family: "Time New Roman";*/
+	/*font-family: Arial;*/
+/*}*/
+/*.p1{
+	font-family:Arial ;
+}*/
+/*.p2{
+	font-family: Century;
+}*/
+/*first in first out*/
+/*.p3{
+	font-family: Arial,Century,"Time New Roman";
+}*/
+
+
+
+.p1{
+	/*color: red;*/
+	/*text-transform: uppercase;*/
+	/*text-transform: lowercase;*/
+	/*text-transform: capitalize;*/
+	/*font-variant: small-caps;*/
+
+
+	/*text-indentation*/
+	/*text-indent: 60px;*/
+
+
+	/*font-style:italic;*/
+
+	/*font-weight: bold;*/
+	/*font-weight: 300;*/
+
+
+	
+
+
+}
+.a1{
+	text-decoration: none;
+	/*color: red;*/
+}
+.a1:visited{
+	color: green;
+}
+.a1:hover{
+	color: black;
+	font-size: 30px;
+}
+.menutext{
+	font-family: Arial;Cambria;Century;
+	text-decoration: none;
+	background-color: green;
+	color: white;
+	/*padding: 20px;*/
+	/*top&bottom left&right*/
+	/*padding: 20px 40px;*/
+
+	/*padding: 10px 20px 30px 40px;*/
+	padding-top: 30px;
+	padding-bottom: 40px;
+	padding-left: 50px;
+	padding-right: 60px;
+	border-radius: 10px;
+}
+.menutext:hover{
+	color: gold;
+	background-color: black;
+	font-size: 20px;
+	border-radius: 50px;
+	transition: 3s;
+}
+.imgdesign{
+	width: 80px;
+	height: 80px;
+	cursor: pointer;
+}
+.imgdesign:hover{
+	
+	width: 200px;
+	height: 200px;
+	transition: 1s;
+}

@@ -1,0 +1,34 @@
+/*element selector*/
+h1{
+	color: red;
+}
+/*group selector [unit(,)]*/
+h2,h3,h4{
+	color: red;
+}
+
+/*ID Selector*/
+/*#pray{
+	color: blue;
+}
+
+#myself{
+	color: red;
+}
+
+#japu{
+	color: orange;
+}*/
+#myself,#japu{
+	color: red;
+}
+.redcolor{
+	color: red;
+}
+.f20{
+	font-size: 20px;
+	color: yellow;
+}
+.green{
+	color: green;
+}
